@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "712e3885-3887-4759-a7e7-d91ed09d4ea4",
+		"name": "SUM3 JUANM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46325528"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/tareas/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxNDE3OTM4LCJpYXQiOjE3NTE0MTc2MzgsImp0aSI6ImU2NzJlZGI3ZDFlMDQ2ZGU4YTM5ZDdhYzhjZDY4ZmE2IiwidXNlcl9pZCI6MX0.URXdaK3nwIXgN0CjWkPbxyej2o8Qf6DuT4r3ZA-SHhI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"titulo\": \"Tarea 1\",\r\n  \"descripcion\": \"Descripción de la tarea\",\r\n  \"completado\": false,\r\n  \"usuario\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/tareas/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"tareas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/token/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"sun\",\r\n  \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/tareas/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxNDE3OTM4LCJpYXQiOjE3NTE0MTc2MzgsImp0aSI6ImU2NzJlZGI3ZDFlMDQ2ZGU4YTM5ZDdhYzhjZDY4ZmE2IiwidXNlcl9pZCI6MX0.URXdaK3nwIXgN0CjWkPbxyej2o8Qf6DuT4r3ZA-SHhI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/tareas/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"tareas",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
